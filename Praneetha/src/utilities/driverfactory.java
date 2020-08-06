@@ -18,6 +18,11 @@ public class driverfactory {
 
     }
 
-
+    @After
+    public void tearDown() throws Exception {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
 }
